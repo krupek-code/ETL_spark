@@ -15,7 +15,7 @@ Repository with coding task for interview.
 1. Output format has been chosen as **DELTA**.
 2. Based on the requirements and the data provided, it is better to store data in Delta tables rather than Parquet. Delta tables provide ACID transactions, which ensure data consistency and reliability, while Parquet only provides a columnar storage format without transactional capabilities. In this use case, the data is transformed from two different sources, and the output is a new table that adheres to an internal data model.
 3. Output format could depends on business requirements if we have big financial data that requires frequent updates and strong consistency guarantees, Delta would be a good choice. If you need to query and process large amounts of data efficiently, Parquet would be a good choice.
-4. Output was also provided as CSV in repository **only for task purposes ** to fast overview data.
+4. Output was also provided as CSV in repository **only for task purposes** to fast overview data.
 
 ### Conceptual Questions - new batches
 1. To handle new batches of input data without overriding the existing transactions created in previous batches, we can make use of unique identifiers for each batch. This can be achieved by introducing a new column in the output schema of the transactional system, such as "BATCH_ID". The batch ID will be unique for each new batch of input data and can be generated based on the current date and time.
