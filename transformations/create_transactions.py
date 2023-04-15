@@ -18,9 +18,9 @@ class MakeTransactions:
 
     def __init__(
         self,
-        contracts_path="/FileStore/tables/swiss_re/input_contract.csv",
-        claim_path="/FileStore/tables/swiss_re/input_claim.csv",
-        output_path="/FileStore/tables/swiss_re/TRANSACTIONS/",
+        contracts_path="/FileStore/mkrupski_coding_task/input_files/input_contract.csv",
+        claim_path="/FileStore/mkrupski_coding_task/input_files/input_claim.csv",
+        output_path="/FileStore/mkrupski_coding_task/TRANSACTIONS/",
     ):
         self.contracts_path = contracts_path
         self.claim_path = claim_path

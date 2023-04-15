@@ -14,9 +14,9 @@ class TestMakeTransactions(unittest.TestCase):
     @classmethod
     def setUpClass(
         cls,
-        contracts_path="/FileStore/tables/tests/input_contract.csv",
-        claim_path="/FileStore/tables/tests/input_claim.csv",
-        output_path="/FileStore/tables/tests/TRANSACTIONS",
+        contracts_path="/FileStore/mkrupski_coding_task/test_files/input_contract.csv",
+        claim_path="/FileStore/mkrupski_coding_task/test_files/input_claim.csv",
+        output_path="/FileStore/mkrupski_coding_task/test-output/",
     ):
         cls.contracts_path = contracts_path
         cls.claim_path = claim_path
@@ -236,8 +236,3 @@ class TestMakeTransactions(unittest.TestCase):
             "CONTRACT_SOURCE_SYSTEM=Europe 3",
             "The partition is not as expected. Expected is CONTRACT_SOURCE_SYSTEM=Europe 3.",
         )
-
-# COMMAND ----------
-
-suite = unittest.TestLoader().loadTestsFromTestCase(TestMakeTransactions)
-unittest.TextTestRunner(verbosity=2).run(suite)

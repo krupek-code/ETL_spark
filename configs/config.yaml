@@ -1,13 +1,18 @@
 notebooks:
-  transformations:
-    create_transactions: /Users/{{ username }}/transformations/create_transactions.ipynb
-  tests:
-    test_create_transactions: /Users/{{ username }}/tests/test_create_transactions.ipynb
-  schemas:
-    test_create_transactions: /Users/{{ username }}/schemas/datasets_schema.ipynb
+  configs:
+    config: /Users/{{ username }}/configs/config.yaml
+    databricks_files_config: /Users/{{ username }}/configs/databricks_files_config.ipynb
+  execution:
+    execute_databricks_configurations: /Users/{{ username }}/execution/execute_databricks_configurations.ipynb
+    execute_tests: /Users/{{ username }}/execution/execute_tests.ipynb
+    execute_transactions: /Users/{{ username }}/execution/execute_transactions.ipynb
   input_files:
     input_claim: /Users/{{ username }}/input_files/input_claim.csv
     input_contract: /Users/{{ username }}/input_files/input_contract.csv
   requirements: /Users/{{ username }}/requirements.txt
-  configs:
-    config: /Users/{{ username }}/configs/config.yaml
+  schemas:
+    test_create_transactions: /Users/{{ username }}/schemas/datasets_schema.ipynb
+  tests:
+    test_create_transactions: /Users/{{ username }}/tests/test_create_transactions.ipynb
+  transformations:
+    create_transactions: /Users/{{ username }}/transformations/create_transactions.ipynb
