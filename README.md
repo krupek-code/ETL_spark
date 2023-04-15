@@ -12,10 +12,11 @@ Repository with coding task for interview.
 4. API is provided as string **only for task purposes**, but with best praticices it **should be coded as databricks-secret in secret scope (connecting Azure key vault)**
 
 ### Execution 
-1. Execute **databricks_configuration notebook** to configure environment **specifically** when executing from Databricks Repos.
-2. Execution of configuration file will create a nesscesary directory in your **dbfs:/FileStore/mkrupski_coding_task/** and move input/test files.
-3. Execute test will show you output of tests.
-4. Execute transactions will write output to **dbfs:/FileStore/mkrupski_coding_task/TRANSACTIONS/** in Delta Format.
+1. Pull code to your databricks Repos environment. 
+2. Execute **databricks_configuration notebook** to configure environment **specifically** when executing from Databricks Repos.
+3. Execution of configuration file will create a nesscesary directory in your **dbfs:/FileStore/mkrupski_coding_task/** and move input/test files.
+4. Execute test will show you output of tests.
+5. Execute transactions will write output to **dbfs:/FileStore/mkrupski_coding_task/TRANSACTIONS/** in Delta Format.
 
 ### Output
 1. Output format has been chosen as **DELTA**.

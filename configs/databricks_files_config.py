@@ -1,4 +1,8 @@
 # Databricks notebook source
+import json
+
+# COMMAND ----------
+
 # MAGIC %sh 
 # MAGIC pip install -r /Workspace/Repos/mkrupski@bi4all.pt/SwissRe_task/requirements.txt
 

@@ -10,6 +10,9 @@ import json
 
 # COMMAND ----------
 
+y = dbutils.notebook.entry_point.getDbutils().notebook().getContext().toJson() 
+res = json.loads(y)
+user_name = res['tags']['user']
 sys.path.append(os.path.abspath(f'/Workspace/Repos/{user_name}/SwissRe_task/'))
 
 # COMMAND ----------
