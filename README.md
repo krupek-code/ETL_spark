@@ -2,8 +2,8 @@
 Repository with coding task for interview.
 
 ## Solution information
-1. The solution is implemented using Databricks.
-2. Project structure is described in configs -> config.yaml.
+1. The solution is implemented and can be executed using Databricks environment.
+2. Project structure is described in configs/config.yaml.
 
 ### Transformation and Test Code 
 1. Code is implemented and described in transformations -> create transaction.
