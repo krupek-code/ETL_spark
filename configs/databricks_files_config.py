@@ -14,12 +14,12 @@ user_name = res['tags']['user']
 
 # COMMAND ----------
 
-!mkdir /dbfs/FileStore/mkrupski_coding_task/input_files/
-!mkdir /dbfs/FileStore/mkrupski_coding_task/TRANSACTIONS/
+!mkdir /dbfs/FileStore/mkrupski_coding_task/ /dbfs/FileStore/mkrupski_coding_task/input_files/
+!mkdir /dbfs/FileStore/mkrupski_coding_task/ /dbfs/FileStore/mkrupski_coding_task/TRANSACTIONS/
 !cp /Workspace/Repos/$user_name/SwissRe_task/input_files/input_claim.csv /dbfs/FileStore/mkrupski_coding_task/input_files/
 !cp /Workspace/Repos/$user_name/SwissRe_task/input_files/input_contract.csv /dbfs/FileStore/mkrupski_coding_task/input_files/
-!mkdir /dbfs/FileStore/mkrupski_coding_task/test_files/
-!mkdir /dbfs/FileStore/mkrupski_coding_task/test_output/
+!mkdir /dbfs/FileStore/mkrupski_coding_task/ /dbfs/FileStore/mkrupski_coding_task/test_files/
+!mkdir /dbfs/FileStore/mkrupski_coding_task/ /dbfs/FileStore/mkrupski_coding_task/test_output/
 !cp /Workspace/Repos/$user_name/SwissRe_task/input_files/input_claim.csv /dbfs/FileStore/mkrupski_coding_task/test_files/
 !cp /Workspace/Repos/$user_name/SwissRe_task/input_files/input_contract.csv /dbfs/FileStore/mkrupski_coding_task/test_files/
 
