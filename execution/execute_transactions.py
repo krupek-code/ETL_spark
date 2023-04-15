@@ -24,3 +24,13 @@ transaction_df.display()
 # COMMAND ----------
 
 transaction.write_output()
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC #### Read output
+
+# COMMAND ----------
+
+df_output = spark.read.format("delta").load(transaction.output_path)
+df_output.display()

@@ -13,7 +13,7 @@ Repository with coding task for interview.
 
 ### Execution 
 1. Pull code to your databricks Repos environment. 
-2. Execute **databricks_configuration notebook** to configure environment **specifically** when executing from Databricks Repos.
+2. Execute **databricks_configuration notebook** to configure environment **specifically** when executing from Databricks Repos. **Make sure that you have DBFS root directory dbfs:/FileStore/ and provided directories and files will not affect your environment.**
 3. Execution of configuration file will create a nesscesary directory in your **dbfs:/FileStore/mkrupski_coding_task/** and move input/test files.
 4. Execute test will show you output of tests.
 5. Execute transactions will write output to **dbfs:/FileStore/mkrupski_coding_task/TRANSACTIONS/** in Delta Format.
