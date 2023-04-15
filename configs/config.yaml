@@ -1,0 +1,13 @@
+notebooks:
+  transformations:
+    create_transactions: /Users/{{ username }}/transformations/create_transactions.ipynb
+  tests:
+    test_create_transactions: /Users/{{ username }}/tests/test_create_transactions.ipynb
+  schemas:
+    test_create_transactions: /Users/{{ username }}/schemas/datasets_schema.ipynb
+  input_files:
+    input_claim: /Users/{{ username }}/input_files/input_claim.csv
+    input_contract: /Users/{{ username }}/input_files/input_contract.csv
+  requirements: /Users/{{ username }}/requirements.txt
+  configs:
+    config: /Users/{{ username }}/configs/config.yaml
