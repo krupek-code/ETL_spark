@@ -3,14 +3,13 @@ import json
 
 # COMMAND ----------
 
-# MAGIC %sh 
-# MAGIC pip install -r /Workspace/Repos/mkrupski@bi4all.pt/SwissRe_task/requirements.txt
-
-# COMMAND ----------
-
 y = dbutils.notebook.entry_point.getDbutils().notebook().getContext().toJson() 
 res = json.loads(y)
 user_name = res['tags']['user']
+
+# COMMAND ----------
+
+!pip install -r /Workspace/Repos/$user_name/SwissRe_task/requirements.txt
 
 # COMMAND ----------
 
