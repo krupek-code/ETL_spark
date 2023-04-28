@@ -1,5 +1,4 @@
-# SwissRe_task
-Repository with coding task for interview.
+Repository with ETL build in databricks
 
 ## Solution information
 1. The solution is implemented and can be executed using Databricks environment.
