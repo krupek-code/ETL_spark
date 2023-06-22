@@ -1,5 +1,3 @@
-Repository with ETL build in databricks
-
 ## Solution information
 1. The solution is implemented and can be executed using Databricks environment.
 2. Project structure is described in configs/config.yaml.
